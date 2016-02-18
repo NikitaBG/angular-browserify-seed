@@ -6,6 +6,8 @@ module.exports =
         'ngAnimate',
         'ngAria',
         'ngMaterial',
+        'ngMdIcons',
+        'ngResource',
         'pascalprecht.translate',
 
         // html templates in $templateCache

@@ -1,22 +1,11 @@
 @import "variables";
 @import "imports";
 
-body {
-  text-align: center;
-  color: #222;
-}
-
-.welcome {
-  width: 300px;
-  height: 510px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -150px;
-  margin-top: -255px;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
+.text-capitalize {
+  text-transform: capitalize; }
+.md-fab:hover, .md-fab.md-focused {
+  background-color: lightblue !important; }
+p.note {
+  font-size: 1.2rem; }
+.lock-size {
+  width: 300px;}

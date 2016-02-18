@@ -1,0 +1,21 @@
+<div style="height: 100%; max-width: 960px">
+	<div ng-include="'app/foo/templates/bar.html'"></div>
+		<md-virtual-repeat-container style="height:100%">
+			<div layout="row" layout-wrap>
+				<div class="repeated-item"  md-virtual-repeat="item in album.dataset" md-item-size="6" md-on-demand="true" flex="33" flex-xs="100" flex-sm="50">
+					<md-card>
+		        		<img ng-src="{{item.url}}" class="md-card-image" style="height:300px!important"/>
+				        <md-card-title>
+				          <md-card-title-text>
+				            <span class="md-headline">{{item.title}}</span>
+				          </md-card-title-text>
+			            </md-card-title>
+			            <md-card-actions layout="row" layout-align="end center">
+				          <md-button>Open</md-button>
+				        </md-card-actions>
+			        </md-card>
+		        </div>
+        	</div>
+		</md-virtual-repeat-container>
+	</div>
+</div>
