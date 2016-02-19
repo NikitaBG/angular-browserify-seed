@@ -1,0 +1,17 @@
+<div class="max-height-and-width">
+	<div ng-include="'app/foo/templates/fab.html'"></div>
+		<div layout="row" layout-align="center center">
+			<md-card>
+        		<img ng-src="{{image.url}}" class="md-card-image"/>
+		        <md-card-title>
+		          <md-card-title-text>
+		            <span class="md-headline">{{image.title}}</span>
+		          </md-card-title-text>
+	            </md-card-title>
+	            <md-card-actions layout="row" layout-align="end center">
+		          <md-button href="/album/{{image.albumId}}">Album</md-button>
+		        </md-card-actions>
+	        </md-card>
+    	</div>
+	<ng-include src="'app/foo/templates/footer.html'"></ng-include>
+</div>

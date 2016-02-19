@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = /*ngInject*/
-    function ($routeProvider) {
+    function ($routeProvider,$locationProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'app/foo/templates/main.html',
@@ -13,7 +13,13 @@ module.exports = /*ngInject*/
                 controller: 'albumController',
                 controllerAs: 'album'
             })
+            .when('/image/:id', {
+                templateUrl: 'app/foo/templates/image.html',
+                controller: 'imageController',
+                controllerAs: 'image'
+            })
             .otherwise({
                 redirectTo: '/'
             });
+            $locationProvider.html5Mode({enabled: true, requireBase: false});
     };

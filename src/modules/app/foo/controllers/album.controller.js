@@ -5,7 +5,7 @@ module.exports = /*@ngInject*/
         var self = this;
 
         (function() {
-			albumService.getAlbum($route.routeParams.id).then(function(response){
+			albumService.getAlbum($route.current.pathParams.id).then(function(response){
 	    		$scope.images = response;
 	    		self.onDemand = true;
 

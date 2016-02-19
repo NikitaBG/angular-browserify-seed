@@ -30,7 +30,7 @@ module.exports = /*@ngInject*/
 				self.toggle = function() {
 
 					if (!self._toggle) {
-					  self._toggle = 2;
+					  self._toggle = 1;
 					} else if (self._toggle < 8) {
 					  self._toggle += 1;
 					} else {
@@ -42,8 +42,8 @@ module.exports = /*@ngInject*/
 
 					self.dataset._refresh($scope.images);
 				};
-		        }, function(err, status){
-		        	console.log(err);
-		        });
+	        }, function(err, status){
+	        	console.log(err);
+	        });
 		})();
     };

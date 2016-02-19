@@ -5,4 +5,5 @@ module.exports =
         .config(require('./routes.js'))
         .config(require('./i18n/en.js'))
         .controller('homeController', require('./controllers/home.controller'))
-        .controller('albumController', require('./controllers/album.controller'));
+        .controller('albumController', require('./controllers/album.controller'))
+        .controller('imageController', require('./controllers/image.controller'));

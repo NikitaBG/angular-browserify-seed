@@ -9,3 +9,18 @@ p.note {
   font-size: 1.2rem; }
 .lock-size {
   width: 300px;}
+ body{
+ 	margin: auto;
+ 	max-width: 960px;
+ 	text-align: center
+ }
+ footer{
+ 	background-color: silver;
+ }
+ .max-height-and-width{
+ 	height: 100%;
+ 	max-width: 960px;
+ }
+ .image-important{
+ 	height: 300px!important;
+ }
